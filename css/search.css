@@ -1,0 +1,152 @@
+main>.search>.title{
+  background: #262626;
+  padding: 10px 20px;
+}
+main>.search>.title .input{
+  width: 82%;
+  position: relative;
+}
+main>.search>.title .input input{
+  border: 1px solid #999999;
+  border-radius: 18px;
+  background: #262626;
+  height: 32px;
+  color: #999;
+  width: 88%;
+  padding-left: 12%;
+  font-size: 14px;
+}
+main>.search>.title .input .ico{
+  position: absolute;
+  left: 10px;
+  top: 7px;
+  width: 18px;
+  height: 18px;
+}
+main>.search>.title .input .search-ico{
+  position: absolute;
+  right: 10px;
+  top: 7px;
+  width: 18px;
+  height: 18px;
+}
+main>.search>.title .text{
+  margin-left: 20px;
+  font-size: 14px;
+  color: #CCCCCC;
+  line-height: 34px;
+}
+/*有历史内容*/
+main>.search>.content{
+  padding: 20px;
+}
+main>.search>.content>.title{
+  font-size: 14px;
+  color: #333333;
+  font-weight: bold;
+}
+main>.search>.content>.list{
+  margin-top: 18px;
+}
+main>.search>.content>.list a{
+  padding: 5px 15px;
+  font-size: 12px;
+  color: #666666;
+  background: #F2F2F2;
+  border-radius: 18px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  display: block;
+  float: left;
+}
+main>.search>.content>.delete{
+  margin-top: 25px;
+  float: right;
+  font-size: 14px;
+  color: #D1AF67;
+}
+/*没有有历史内容*/
+main>.search>.no-content{
+  margin-top: 134px;
+}
+main>.search>.no-content .ico{
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+}
+main>.search>.no-content .text{
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666666;
+  line-height: 25px;
+  text-align: center;
+}
+
+/* ------------------------搜索结果页css-------------------------- */
+main>.search-list>.tab>.tabTitle{
+  width: 100%;
+  height: 44px;
+  border-bottom: 1px solid #EEEEEE;
+}
+main>.search-list>.tab>.tabTitle li{
+  width: 33.33%;
+  float: left;
+  font-size: 13px;
+  color: #333333;
+  text-align: center;
+  line-height: 44px;
+}
+main>.search-list>.tab>.tabTitle .on{
+  color: #D1AF67;
+  font-weight: bold;
+}
+/*全部商品分界线*/
+main>.search-list>.tab>.tabContent>.list>.list-product{
+  border-top:10px solid #f1f1f1;
+}
+/*商品*/
+main>.search-list>.tab>.tabContent .list-product{
+  padding: 15px;
+}
+main>.search-list>.tab>.tabContent .list-product a{
+  width: 49%;
+  float: left;
+  margin-bottom: 15px;
+}
+main>.search-list>.tab>.tabContent .list-product a:nth-of-type(odd){
+  margin-right: 2%;
+}
+main>.search-list>.tab>.tabContent .list-product a .img{
+  width: 100%;
+}
+main>.search-list>.tab>.tabContent .list-product a .title{
+  font-size: 12px;
+  color: #666666;
+  text-align: center;
+  margin-top: 10px;
+  line-height: 17px;
+}
+main>.search-list>.tab>.tabContent .list-product a .price{
+  font-size: 12px;
+  color: #D1AF67;
+  text-align: center;
+  line-height: 17px;
+}
+
+/*没有有内容*/
+main>.search-list .no-content{
+  margin-top: 134px;
+}
+main>.search-list .no-content .ico{
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+}
+main>.search-list .no-content .text{
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666666;
+  line-height: 25px;
+  text-align: center;
+}
+

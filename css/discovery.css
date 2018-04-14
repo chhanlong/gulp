@@ -1,0 +1,271 @@
+main{
+  margin-bottom: 50px;
+}
+main>.discovery>.title{
+  background: #262626;
+  padding: 14px 0;
+  text-align: center;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+/*内容*/
+main>.discovery>.content{
+  width: 100%;
+}
+main>.discovery>.content .list{
+  padding: 20px 15px 15px 15px;
+  border-bottom: 3px solid #F2F2F2;;
+}
+main>.discovery>.content .list>.title .title-a{
+  border: 1px solid #D1AF67;
+  border-radius: 3px;
+  font-size: 12px;
+  color: #D1AF67;
+  width: 45px;
+  height: 18px;
+  text-align: center;
+  line-height: 20px;
+}
+main>.discovery>.content .list>.title .title-b{
+  font-size: 10px;
+  color: #999999;
+  line-height: 20px;
+  margin-left: 12px;
+}
+main>.discovery>.content .list>.content{
+  font-size: 16px;
+  color: #666666;
+  line-height: 28px;
+  margin-top: 11px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+main>.discovery>.content .list>.img{
+  margin-top: 10px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #F2F2F2;
+}
+main>.discovery>.content .list>.img img{
+  background: #D8D8D8;
+  border-radius: 3px;
+}
+main>.discovery>.content .list>.img2 li{
+  width: 32%;
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 8px;
+}
+main>.discovery>.content .list>.img2 li:nth-child(3n) {
+  margin-right: 0;
+}
+/*  评价  */
+main>.discovery>.content .list>.comment{
+  margin-top: 15px;
+}
+main>.discovery>.content .list>.comment a{
+  width: 50%;
+  float: left;
+  display: block;
+  text-align: center;
+}
+main>.discovery>.content .list>.comment a .ico{
+  width: 18px;
+  height: 18px;
+  margin-left: 3.2rem;
+}
+main>.discovery>.content .list>.comment .fabulous .ico{
+  background-image: url("../images/article-details-fabulous.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main>.discovery>.content .list>.comment .fabulous .ico2{
+  background-image: url("../images/article-details-fabulous2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main>.discovery>.content .list>.comment a .text{
+  font-size: 12px;
+  color: #666666;
+  line-height: 18px;
+  margin-left: 10px;
+}
+
+/* ------------------------发现详情页css-------------------------- */
+.discovery-details-main{
+  margin-bottom: 90px;
+}
+main>.discovery>.title{
+  background: #262626;
+  padding: 14px 0;
+  text-align: center;
+  position: relative;
+}
+main>.discovery>.title .title-a{
+  font-size: 16px;
+  color: #FFFFFF;
+}
+main>.discovery>.title .title-ico{
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+main>.discovery-details>.content .list>.img{
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+main>.discovery-details>.content .list{
+  border-bottom: 10px solid #f2f2f2;
+}
+
+/* 评论区 */
+main>.discovery-details>.comment .title{
+  padding: 19px 15px 10px 15px;
+  font-size: 16px;
+  color: #333333;
+}
+main>.discovery-details>.comment .content{
+  padding: 10px 0 16px 0;
+  margin: 0 15px;
+  border-top:1px solid #EEEEEE;
+}
+main>.discovery-details>.comment .content li{
+  padding: 10px 9px 15px 9px;
+}
+main>.discovery-details>.comment .content li .left{
+  width: 28px;
+  height: 28px;
+}
+main>.discovery-details>.comment .content li .left img{
+  border-radius: 28px;
+}
+main>.discovery-details>.comment .content li .right{
+  margin-left: 36px;
+}
+main>.discovery-details>.comment .content li .right .name{
+  position: relative;
+}
+main>.discovery-details>.comment .content li .right .name .name-a{
+  font-size: 12px;
+  color: #999999;
+  line-height: 12px;
+}
+main>.discovery-details>.comment .content li .right .name .name-b{
+  font-size: 10px;
+  color: #CCCCCC;
+  line-height: 12px;
+  margin-top: 2px;
+}
+main>.discovery-details>.comment .content li .right .name .fabulous{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+main>.discovery-details>.comment .content li .right .name .fabulous .ico{
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  background-image: url("../images/article-details-fabulous.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main>.discovery-details>.comment .content li .right .name .fabulous .ico2{
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  background-image: url("../images/article-details-fabulous2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main>.discovery-details>.comment .content li .right .name .fabulous .text{
+  font-size: 10px;
+  color: #999999;
+}
+main>.discovery-details>.comment .content li .right .version{
+  font-size: 12px;
+  color: #666666;
+  line-height: 20px;
+  margin-top: 7px;
+}
+main>.discovery-details>.comment .content li .right .version span{
+  color: #d2b06a;
+}
+main>.discovery-details>.comment .footer{
+  font-size: 12px;
+  color: #D1AF67;
+  border-top:1px solid #EEEEEE;
+  padding-top: 14px;
+  text-align: center;
+}
+main>.discovery-details>.comment-input{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 10px 0;
+  width: 100%;
+  background-color: #ffffff;
+}
+main>.discovery-details>.comment-input .left{
+  margin-left: 15px;
+  width: 55%;
+}
+main>.discovery-details>.comment-input .left input{
+  border: 1px solid #EEEEEE;
+  height: 44px;
+  width: 100%;
+  color: #666666;
+  font-size: 12px;
+}
+main>.discovery-details>.comment-input .right{
+  margin-left: 20px;
+  padding-top: 6px;
+}
+main>.discovery-details>.comment-input .right li:nth-child(2){
+  margin-left: 20px;
+}
+main>.discovery-details>.comment-input .right li:nth-child(3){
+  margin-left: 20px;
+}
+main>.discovery-details>.comment-input .right .ico{
+  width: 20px;
+  height: 20px;
+}
+/*赞*/
+main>.discovery-details>.comment-input .right .fabulous-bottom .ico{
+  background-image: url("../images/article-details-fabulous.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main>.discovery-details>.comment-input .right .fabulous-bottom .ico2{
+  background-image: url("../images/article-details-fabulous2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*收藏*/
+main>.discovery-details>.comment-input .right .collection .ico{
+  background-image: url("../images/article-details-collection.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main>.discovery-details>.comment-input .right .collection .ico2{
+  background-image: url("../images/article-details-collection2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main>.discovery-details>.comment-input .right .text{
+  font-size: 12px;
+  color: #666666;
+  margin-top: 2px;
+  text-align: center;
+}
+/* 按钮 */
+main>.discovery-details>.comment-input .rightButton{
+  margin-left: 20px;
+  padding-top: 13px;
+  font-size: 16px;
+  color: #666;
+}

@@ -1,0 +1,13 @@
+{
+  "article.min.js": "article.min.js?v=3b4b37b30f",
+  "common.min.js": "common.min.js?v=a4771b2a93",
+  "discovery.min.js": "discovery.min.js?v=2f2684ddac",
+  "goods.min.js": "goods.min.js?v=99b046ca93",
+  "index.min.js": "index.min.js?v=ab79e27c6f",
+  "jquery.min.js": "jquery.min.js?v=a6fdca8e27",
+  "list-all.min.js": "list-all.min.js?v=4131644632",
+  "list.min.js": "list.min.js?v=18863ca702",
+  "member.min.js": "member.min.js?v=17a89733d3",
+  "require.min.js": "require.min.js?v=b0d32e9327",
+  "search.min.js": "search.min.js?v=3b3fedd430"
+}

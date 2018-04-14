@@ -1,0 +1,26 @@
+###############
+#  folder  文件夹
+###############
+/.idea/*
+/cache/*
+/node_modules/*
+/.git/*
+/.cache/*
+
+
+
+###############
+#  file  文件
+###############
+env.php
+
+
+*.svn
+*.sh
+*.gz
+*.tar.gz
+*.zip
+*.db
+/.project
+/.buildpath
+/.settings

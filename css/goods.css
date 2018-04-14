@@ -1,0 +1,170 @@
+main>.goods>.title{
+  background: #262626;
+  padding: 14px 0;
+  text-align: center;
+  position: relative;
+}
+main>.goods>.title .title-a{
+  font-size: 16px;
+  color: #FFFFFF;
+}
+main>.goods>.title .title-ico{
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+main>.goods>.title .title-ico2{
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+main>.goods>.banner{
+  width: 255px;
+  margin: 20px auto;
+  position: relative;
+}
+main>.goods>.banner .swiper-container-banner{
+  overflow: hidden;
+}
+main>.goods>.banner .banner-left{
+  position: absolute;
+  top: 40%;
+  left: -40px;
+  width: 30px;
+  height: 54px;
+  z-index: 10;
+}
+main>.goods>.banner .banner-right{
+  position: absolute;
+  top: 40%;
+  right: -40px;
+  width: 30px;
+  height: 54px;
+  z-index: 10;
+}
+main>.goods>.banner-page{
+  margin: 0 60px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 12px;
+  color: #999999;
+  border-bottom: 1px solid #eee;
+  position: relative;
+  line-height: 17px;
+}
+main>.goods>.banner-page .collection{
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+}
+main>.goods>.banner-page .collection .ico{
+  background-image: url("../images/article-details-collection.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 15px;
+  height: 15px;
+}
+main>.goods>.banner-page .collection .ico2{
+  background-image: url("../images/article-details-collection2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 15px;
+  height: 15px;
+}
+main>.goods>.banner-page .collection .text{
+  font-size: 12px;
+  color: #999999;
+  line-height: 17px;
+  margin-left: 5px;
+}
+main>.goods>.banner-page .collection .text .num{
+  margin-right: 5px;
+}
+main>.goods>.banner-title{
+  width: 255px;
+  margin: 10px auto 0 auto;
+  padding-bottom: 35px;
+}
+main>.goods>.banner-title p{
+  font-size: 12px;
+  color: #333333;
+  text-align: center;
+  line-height: 20px;
+}
+main>.goods>.banner-title p:nth-child(2){
+  margin-top: 8px;
+}
+main>.goods>.banner-title p span{
+  color: #d1af67;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* 图赏 */
+main>.goods>.chart{
+  border-bottom: 10px solid #f2f2f2;
+  border-top: 10px solid #f2f2f2;
+}
+main>.goods>.chart .title{
+  padding: 20px 0 10px 20px;
+  font-size: 14px;
+  color: #333333;
+}
+main>.goods>.chart .content{
+  margin:0 0 20px 20px;
+  overflow: hidden;
+}
+/* 基本信息 */
+main>.goods>.information{
+  padding: 20px;
+}
+main>.goods>.information .title{
+  font-size: 14px;
+  color: #333333;
+  margin-bottom: 22px;
+}
+main>.goods>.information .content .list{
+  margin-top: 10px;
+}
+main>.goods>.information .content .list .tag{
+  border: 1px solid #CCCCCC;
+  border-radius: 3px;
+  font-size: 12px;
+  color: #CCCCCC;
+  width: 40px;
+  height: 22px;
+  text-align: center;
+  line-height: 22px;
+}
+main>.goods>.information .content .list .tag2{
+  padding: 6px 0 0 9px;
+}
+main>.goods>.information .content .list .tag2 p{
+  font-size: 12px;
+  color: #666666;
+  line-height: 25px;
+}
+/* 轮播大图 */
+main>.goods>.popup{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  z-index: 100;
+  display: none;
+}
+main>.goods>.popup>.popup-banner{
+  margin-top: 20%;
+}
+main>.goods>.popup>.popup-banner .paginationBig{
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+  margin-top: 15px;
+}

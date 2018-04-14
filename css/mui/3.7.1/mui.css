@@ -1,0 +1,608 @@
+/**
+  此文件是从 ./mui-bk.css 中提取出来并经过了少量修改，
+  暂时只包含了
+  popover，alert，confirm，toast
+  这几个方法的样式，未来如果需要添加样式的话在此添加即可
+*/
+.mui-btn,button,input[type=button],input[type=reset],input[type=submit] {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    cursor: pointer;
+    -webkit-transition: all;
+    transition: all;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
+    text-align: center;
+    vertical-align: top;
+    white-space: nowrap;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background-color: #fff;
+    background-clip: padding-box
+}
+.mui-toast-container
+{
+    line-height: 17px;
+
+    position: fixed;
+    z-index: 999;
+    /*bottom: 50px;*/ /* 先隐藏 lyp 20170810 */
+    left: 50%;
+
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+
+    opacity: 0;
+}
+.mui-toast-container
+{
+    line-height: 17px;
+
+    position: fixed;
+    z-index: 9999;
+    top: 40%;
+    left: 50%;
+
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+
+    opacity: 0;
+}
+.mui-toast-container.mui-active
+{
+    opacity: .9;
+}
+.mui-toast-message
+{
+    font-size: 14px;
+
+    padding: 10px 25px;
+    text-align: center;
+    color: #fff;
+    border-radius: 6px;
+    background-color: #323232;
+}
+.mui-popup-backdrop
+{
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    -webkit-transition-duration: 400ms;
+    transition-duration: 400ms;
+
+    opacity: 0;
+    background: rgba(0, 0, 0, .4);
+}
+.mui-popup-backdrop.mui-active
+{
+    opacity: 1;
+}
+.mui-plus.mui-android .mui-popup-backdrop
+{
+    -webkit-transition-duration: 1ms;
+
+    transition-duration: 1ms;
+}
+.mui-popup
+{
+    position: fixed;
+    z-index: 1000000;
+    top: 50%;
+    left: 50%;
+
+    display: none;
+    overflow: hidden;
+
+    width: 270px;
+
+    -webkit-transition-property: -webkit-transform,opacity;
+    transition-property:         transform,opacity;
+    -webkit-transform: translate3d(-50%, -50%, 0) scale(1.185);
+    transform: translate3d(-50%, -50%, 0) scale(1.185);
+    text-align: center;
+
+    opacity: 0;
+    color: #000;
+    border-radius: 13px;
+}
+.mui-popup.mui-popup-in
+{
+    display: block;
+
+    -webkit-transition-duration: 400ms;
+    transition-duration: 400ms;
+    -webkit-transform: translate3d(-50%, -50%, 0) scale(1);
+    transform: translate3d(-50%, -50%, 0) scale(1);
+
+    opacity: 1;
+}
+.mui-popup.mui-popup-out
+{
+    -webkit-transition-duration: 400ms;
+    transition-duration: 400ms;
+    -webkit-transform: translate3d(-50%, -50%, 0) scale(1);
+    transform: translate3d(-50%, -50%, 0) scale(1);
+
+    opacity: 0;
+}
+
+.mui-popup-inner
+{
+    position: relative;
+
+    padding: 15px;
+
+    border-radius: 13px 13px 0 0;
+    background: rgba(255, 255, 255, .95);
+}
+.mui-popup-inner:after
+{
+    position: absolute;
+    z-index: 15;
+    top: auto;
+    right: auto;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 1px;
+
+    content: '';
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.mui-popup-title
+{
+    font-size: 17px;
+    font-weight: 500;
+
+    text-align: center;
+}
+
+.mui-popup-title + .mui-popup-text
+{
+    font-family: inherit;
+    font-size: 14px;
+
+}
+
+.mui-popup-buttons
+{
+    position: relative;
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    display:         flex;
+
+    height: 44px;
+
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.mui-popup-button
+{
+    font-size: 17px;
+    line-height: 44px;
+
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    box-sizing: border-box;
+    width: 100%;
+    height: 44px;
+    padding: 0 5px;
+
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    color: #007aff;
+    background: rgba(255, 255, 255, .95);
+
+    -webkit-box-flex: 1;
+}
+.mui-popup-button:after
+{
+    position: absolute;
+    z-index: 15;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    left: auto;
+
+    display: block;
+
+    width: 1px;
+    height: 100%;
+
+    content: '';
+    -webkit-transform: scaleX(.5);
+    transform: scaleX(.5);
+    -webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+
+    background-color: rgba(0, 0, 0, .2);
+}
+.mui-popup-button:first-child
+{
+    border-radius: 0 0 0 13px;
+}
+.mui-popup-button:first-child:last-child
+{
+    border-radius: 0 0 13px 13px;
+}
+.mui-popup-button:last-child
+{
+    border-radius: 0 0 13px 0;
+}
+.mui-popup-button:last-child:after
+{
+    display: none;
+}
+.mui-popup-button.mui-popup-button-bold
+{
+    font-weight: 600;
+}
+
+.mui-popup-input input
+{
+    font-size: 14px;
+
+    width: 100%;
+    height: 26px;
+    margin: 15px 0 0;
+    padding: 0 5px;
+
+    border: 1px solid rgba(0, 0, 0, .3);
+    border-radius: 0;
+    background: #fff;
+}
+
+.mui-popover
+{
+    position: absolute;
+    z-index: 999;
+
+    display: none;
+
+    width: 280px;
+
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s;
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+    -webkit-transform: none;
+    transform: none;
+
+    opacity: 0;
+    border-radius: 7px;
+    background-color: #f7f7f7;
+    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, .1);
+}
+.mui-popover .mui-popover-arrow
+{
+    position: absolute;
+    z-index: 1000;
+    top: -25px;
+    left: 0;
+
+    overflow: hidden;
+
+    width: 26px;
+    height: 26px;
+}
+.mui-popover .mui-popover-arrow:after
+{
+    position: absolute;
+    top: 19px;
+    left: 0;
+
+    width: 26px;
+    height: 26px;
+
+    content: ' ';
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+
+    border-radius: 3px;
+    background: #f7f7f7;
+}
+.mui-popover .mui-popover-arrow.mui-bottom
+{
+    top: 100%;
+    left: -26px;
+
+    margin-top: -1px;
+}
+.mui-popover .mui-popover-arrow.mui-bottom:after
+{
+    top: -19px;
+    left: 0;
+}
+.mui-popover.mui-popover-action
+{
+    bottom: 0;
+    width: 100%;
+
+    -webkit-transition: -webkit-transform .3s, opacity .3s;
+    transition:         transform .3s, opacity .3s;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    border-radius: 0;
+    background: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.mui-popover.mui-popover-action .mui-popover-arrow
+{
+    display: none;
+}
+.mui-popover.mui-popover-action.mui-popover-bottom
+{
+    position: fixed;
+    max-width: 640px;
+}
+.mui-popover.mui-popover-action.mui-active
+{
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+.mui-popover.mui-popover-action .mui-table-view
+{
+    margin: 8px;
+
+    text-align: center;
+
+    color: #007aff;
+    border-radius: 4px;
+}
+.mui-popover.mui-popover-action .mui-table-view .mui-table-view-cell:after
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    content: '';
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+    background-color: #c8c7cc;
+}
+.mui-popover.mui-popover-action .mui-table-view small
+{
+    font-weight: 400;
+    line-height: 1.3;
+
+    display: block;
+}
+.mui-popover.mui-active
+{
+    display: block;
+
+    opacity: 1;
+}
+.mui-popover .mui-bar ~ .mui-table-view
+{
+    padding-top: 44px;
+}
+
+.mui-backdrop
+{
+    width: 100%;
+    max-width: 640px;
+    position: fixed;
+    z-index: 998;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.mui-bar-backdrop.mui-backdrop
+{
+    bottom: 50px;
+    background: none;
+}
+
+.mui-backdrop-action.mui-backdrop
+{
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.mui-bar-backdrop.mui-backdrop, .mui-backdrop-action.mui-backdrop
+{
+    opacity: 0;
+}
+.mui-bar-backdrop.mui-backdrop.mui-active, .mui-backdrop-action.mui-backdrop.mui-active
+{
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+
+    opacity: 1;
+}
+
+.mui-popover .mui-btn-block
+{
+    margin-bottom: 5px;
+}
+.mui-popover .mui-btn-block:last-child
+{
+    margin-bottom: 0;
+}
+
+.mui-popover .mui-bar
+{
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.mui-popover .mui-bar-nav
+{
+    border-bottom: 1px solid rgba(0, 0, 0, .15);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.mui-popover .mui-scroll-wrapper
+{
+    margin: 7px 0;
+
+    border-radius: 7px;
+    background-clip: padding-box;
+}
+
+.mui-popover .mui-scroll .mui-table-view
+{
+    max-height: none;
+}
+
+.mui-popover .mui-table-view
+{
+    overflow: auto;
+
+    max-height: 300px;
+    margin-bottom: 0;
+
+    border-radius: 7px;
+    background-color: #f7f7f7;
+    background-image: none;
+
+    -webkit-overflow-scrolling: touch;
+}
+.mui-popover .mui-table-view:before, .mui-popover .mui-table-view:after
+{
+    height: 0;
+}
+.mui-popover .mui-table-view .mui-table-view-cell:first-child,
+.mui-popover .mui-table-view .mui-table-view-cell:first-child > a:not(.mui-btn)
+{
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.mui-popover .mui-table-view .mui-table-view-cell:last-child,
+.mui-popover .mui-table-view .mui-table-view-cell:last-child > a:not(.mui-btn)
+{
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+.mui-popover.mui-bar-popover .mui-table-view
+{
+    width: 106px;
+}
+.mui-popover.mui-bar-popover .mui-table-view .mui-table-view-cell
+{
+    padding: 11px 15px 11px 15px;
+
+    background-position: 0 100%;
+}
+.mui-popover.mui-bar-popover .mui-table-view .mui-table-view-cell > a:not(.mui-btn)
+{
+    margin: -11px -15px -11px -15px;
+}
+.mui-table-view-cell
+{
+    position: relative;
+    overflow: hidden;
+    padding: 11px 15px;
+    -webkit-touch-callout: none;
+}
+.mui-table-view-cell:after
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 15px;
+    height: 1px;
+    content: '';
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+    background-color: #c8c7cc;
+}
+.mui-table-view-cell > a:not(.mui-btn)
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: -11px -15px;
+    padding: inherit;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: inherit;
+    /*&:active {
+        background-color: #eee;
+    }*/
+}
+.mui-table-view-cell > a:not(.mui-btn).mui-active
+{
+    background-color: #eee;
+}
+.mui-table-view-cell p
+{
+    margin-bottom: 0;
+}
+
+/*重写mui样式 begin*/
+.mui-toast-container .mui-toast-message{
+    background: rgba(0,0,0,.8);
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 25px;
+    padding: 10px 15px;
+    text-align: left;
+}
+.mui-popover.mui-popover-action{
+    max-width: 640px;
+}
+.mui-popover.mui-popover-action .mui-table-view
+{
+    margin: 8px 10px;
+    border-radius: 13px;
+}
+.mui-backdrop-action.mui-backdrop
+{
+    background-color: rgba(0, 0, 0, .6);
+}
+.mui-table-view .mui-table-view-cell{
+    height: 57px;
+    line-height: 57px;
+    padding: 0;
+}
+.mui-table-view-cell > a:not(.mui-btn){
+    font-size: 20px;
+    margin: 0;
+}
+/*重写mui样式 end*/

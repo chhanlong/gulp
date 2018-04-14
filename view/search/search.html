@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title></title>
+  </head>
+  <link rel="stylesheet" href="../../css/common.css" />
+  <link rel="stylesheet" href="../../css/mui/3.7.1/mui.min.css">
+  <link rel="stylesheet" href="../../css/search.css" />
+  <body>
+  <main>
+    <div class="search">
+
+      <div class="title clearfix">
+        <div class="input fl">
+          <input type="text" placeholder="请输入搜索内容" class="search-input">
+          <div class="ico"><img src="../../images/index-search.png"></div>
+          <div class="search-ico h"><img src="../../images/search-delete.png"></div>
+        </div>
+        <a class="text fl" href="javascript:window.history.back();">取消</a>
+      </div>
+      <!-------------- 有历史内容 ------------>
+      <div class="content">
+        <div class="title">历史搜索</div>
+        <div class="list clearfix">
+          <a href="search-list.html?kw=手表">手表</a>
+          <a href="search-list.html?kw=手表">劳力士</a>
+          <a href="search-list.html?kw=手表">格拉苏蒂</a>
+          <a href="search-list.html?kw=手表">劳力士</a>
+          <a href="search-list.html?kw=手表">格拉苏蒂</a>
+          <a href="search-list.html?kw=手表">劳力士</a>
+          <a href="search-list.html?kw=手表">格拉苏蒂</a>
+        </div>
+        <div class="delete">清空搜索历史</div>
+      </div>
+      <!-------------- 没有历史内容 ------------>
+      <div class="no-content h">
+        <div class="ico"><img src="../../images/search-no.png"></div>
+        <div class="text">暂无搜索记录噢<br>赶紧搜一搜吧</div>
+      </div>
+
+    </div>
+  </main>
+  </body>
+  <script src="../../js/require.js" type="text/javascript" data-main="../../js/search"></script>
+</html>

@@ -1,0 +1,549 @@
+body,html{
+  height: 100%;
+}
+main{
+  height: 100%;
+  background-color: #f1f1f1;
+}
+main>.member-index>.head{
+  height: 90px;
+  background: linear-gradient(#141414,#CCCCCC);
+  padding-top: 30px;
+  display: block;
+}
+main>.member-index>.head .button{
+  background-image: linear-gradient(-180deg, #EFDEA8 3%, #E3C689 100%);
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+  border-radius: 3px;
+  width: 145px;
+  height: 44px;
+  margin: 0 auto;
+  font-size: 16px;
+  color: #000000;
+  text-align: center;
+  line-height: 44px;
+}
+main>.member-index>.head .text{
+  font-size: 12px;
+  color: #CCCCCC;
+  text-align: center;
+  padding-top: 10px;
+}
+main>.member-index>.head2{
+  height: 100px;
+  padding-top: 20px;
+}
+main>.member-index>.head .logo{
+  width: 56px;
+  height: 56px;
+  margin: 0 auto;
+}
+main>.member-index>.head .logo img{
+  border-radius: 56px;
+}
+main>.member-index>.head .name{
+  font-size: 14px;
+  color: #CCCCCC;
+  text-align: center;
+  padding-top: 10px;
+}
+/* 内容 */
+main>.member-index>.content{
+  background-color: #ffffff;
+}
+main>.member-index>.content a{
+  height: 44px;
+  border-bottom: 1px solid #EEEEEE;
+  padding-left: 21px;
+  display: block;
+}
+main>.member-index>.content a:last-child{
+  border-bottom: 0;
+}
+main>.member-index>.content a .ico{
+  width: 18px;
+  height: 18px;
+  margin-top: 14px;
+}
+main>.member-index>.content a .text{
+  font-size: 14px;
+  color: #666666;
+  line-height: 45px;
+  margin-left: 10px;
+  position: relative;
+}
+main>.member-index>.content a .text .spot{
+  background: #FC453C;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  position: absolute;
+  right: -6px;
+  top: 25%;
+}
+main>.member-index>.content a .arrow{
+  background-image: url("../images/member-arrow.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 44px;
+  height: 44px;
+}
+
+
+/* ------------------------个人中心消息-------------------------- */
+.member-news-main{
+  overflow: auto !important;
+}
+main>.member-news>.title{
+  background: #262626;
+  padding: 14px 0;
+  text-align: center;
+  position: relative;
+}
+main>.member-news>.title .title-a{
+  font-size: 16px;
+  color: #FFFFFF;
+}
+main>.member-news>.title .title-ico{
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+main>.member-news>.content{
+  background-color: #ffffff;
+}
+main>.member-news>.content li{
+  padding: 20px;
+}
+main>.member-news>.content li .title{
+  font-size: 12px;
+  color: #666666;
+}
+main>.member-news>.content li .list{
+  padding-top: 15px;
+}
+main>.member-news>.content li .list .left{
+  width: 28px;
+  height: 28px;
+}
+main>.member-news>.content li .list .left img{
+  border-radius: 28px;
+}
+main>.member-news>.content li .list .right{
+  margin-left: 38px;
+}
+main>.member-news>.content li .list .right .name{
+  font-size: 12px;
+  color: #999999;
+  line-height: 12px;
+}
+main>.member-news>.content li .list .right .time{
+  font-size: 10px;
+  color: #CCCCCC;
+  line-height: 12px;
+  margin-top: 4px;
+}
+main>.member-news>.content li .list .right .content{
+  background: #F2F2F2;
+  border-radius: 3px;
+  margin-top: 5px;
+}
+main>.member-news>.content li .list .right .content .text{
+  padding: 10px 13px;
+  border-bottom: 1px solid #dddddd;
+  font-size: 12px;
+  color: #666666;
+  line-height: 20px;
+}
+main>.member-news>.content li .list .right .content .text2{
+  padding: 10px 13px;
+  font-size: 12px;
+  color: #666666;
+  line-height: 20px;
+}
+
+/* ------------------------个人中心意见反馈-------------------------- */
+.member-opinion-main{
+  background-color: #ffffff;
+}
+main>.member-opinion>.title{
+  background: #262626;
+  padding: 14px 0;
+  text-align: center;
+  position: relative;
+}
+main>.member-opinion>.title .title-a{
+  font-size: 16px;
+  color: #FFFFFF;
+}
+main>.member-opinion>.title .title-ico{
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+main>.member-opinion>.title .title-ico2{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+main>.member-opinion>.content{
+  padding: 20px;
+}
+main>.member-opinion>.content .proposal{
+  width: 100%;
+}
+main>.member-opinion>.content .proposal textarea{
+  width: 94%;
+  height: 150px;
+  background: #F2F2F2;
+  border: 1px solid #DDDDDD;
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 25px;
+  color: #666;
+  padding: 3%
+}
+main>.member-opinion>.content .input{
+  width: 100%;
+  margin-top: 10px;
+}
+main>.member-opinion>.content .input input{
+  width: 98%;
+  height: 48px;
+  background: #F2F2F2;
+  border: 1px solid #DDDDDD;
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 25px;
+  color: #666;
+  padding-left: 2%;
+}
+main>.member-opinion>.content .text{
+  font-size: 12px;
+  color: #999999;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* ------------------------个人中心设置-------------------------- */
+main>.member-rewrite>.title{
+  background: #262626;
+  padding: 14px 0;
+  text-align: center;
+  position: relative;
+}
+main>.member-rewrite>.title .title-a{
+  font-size: 16px;
+  color: #FFFFFF;
+}
+main>.member-rewrite>.title .title-ico{
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+main>.member-rewrite>.content{
+  background-color: #ffffff;
+}
+main>.member-rewrite>.content a{
+  height: 44px;
+  border-bottom: 1px solid #EEEEEE;
+  padding-left: 21px;
+  display: block;
+}
+main>.member-rewrite>.content a:last-child{
+  border-bottom: 0;
+}
+main>.member-rewrite>.content a .ico{
+  width: 18px;
+  height: 18px;
+  margin-top: 14px;
+}
+main>.member-rewrite>.content a .text{
+  font-size: 14px;
+  color: #666666;
+  line-height: 45px;
+  margin-left: 10px;
+  position: relative;
+}
+main>.member-rewrite>.content a .text .spot{
+  background: #FC453C;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  position: absolute;
+  right: -6px;
+  top: 25%;
+}
+main>.member-rewrite>.content a .arrow{
+  background-image: url("../images/member-arrow.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 44px;
+  height: 44px;
+}
+main>.member-rewrite>.content a .arrow2{
+  background-image: none;
+  width: 44px;
+  height: 44px;
+  font-size: 12px;
+  color: #999999;
+  line-height: 45px;
+}
+/* 退出登录 */
+main>.member-rewrite>.button{
+  position: absolute;
+  bottom: 40px;
+  left: 5%;
+  width: 90%;
+  background: #F2F2F2;
+  border: 1px solid #D1AF67;
+  border-radius: 3px;
+  text-align: center;
+  height: 45px;
+  line-height: 45px;
+  font-size: 14px;
+  color: #D1AF67;
+}
+
+
+/* ------------------------个人中心收藏-------------------------- */
+.member-collection-main{
+  overflow: auto !important;
+}
+main>.member-collection>.title{
+  background: #262626;
+  padding: 14px 0;
+  text-align: center;
+  position: relative;
+}
+main>.member-collection>.title .title-a{
+  font-size: 16px;
+  color: #FFFFFF;
+}
+main>.member-collection>.title .title-ico{
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+main>.member-collection>.title .title-text{
+  font-size: 14px;
+  color: #FFFFFF;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+main>.member-collection>.title .title-ico2{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+/*内容*/
+main>.member-collection>.container{
+  margin-bottom: 45px;
+}
+main>.member-collection>.container>.title{
+  height: 44px;
+  border: 1px solid #EEEEEE;
+}
+main>.member-collection>.container>.title li{
+  width: 25%;
+  float: left;
+  text-align: center;
+  font-size: 13px;
+  color: #333333;
+  line-height: 44px;
+  background-color: #ffffff;
+}
+main>.member-collection>.container>.title .on{
+  color: #D1AF67;
+  font-weight: bold;
+}
+main>.member-collection>.container>.content .list{
+  background-color: #ffffff;
+}
+main>.member-collection>.container>.content .list .choice{
+  width: 25px;
+  height: 25px;
+  margin-top: 33px;
+  margin-right: 12px;
+  float: left;
+  background-image: url("../images/member-ico.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main>.member-collection>.container>.content .list .choice2{
+  background-image: url("../images/member-ico2.png");
+}
+/*文章*/
+main>.member-collection>.container>.content .news .choice{
+  margin-top: 0;
+}
+main>.member-collection>.container>.content .news .page{
+  display: table;
+}
+
+/*发现*/
+main>.member-collection>.container>.content .list .whole-discover{
+  padding: 20px 15px 15px 15px;
+  border-bottom: 8px solid #F2F2F2;;
+  position: relative;
+}
+main>.member-collection>.container>.content .list .whole-discover:last-child{
+  border-bottom: 0;
+}
+
+main>.member-collection>.container>.content .list .whole-discover>.choice{
+  margin-top: 0;
+}
+main>.member-collection>.container>.content .list .whole-discover>.page{
+  display: table;
+}
+
+main>.member-collection>.container>.content .list .whole-discover>.page .title .title-a{
+  border: 1px solid #D1AF67;
+  border-radius: 3px;
+  font-size: 12px;
+  color: #D1AF67;
+  width: 45px;
+  height: 18px;
+  text-align: center;
+  line-height: 20px;
+}
+main>.member-collection>.container>.content .list .whole-discover>.page .title .title-b{
+  font-size: 10px;
+  color: #999999;
+  line-height: 20px;
+  margin-left: 12px;
+}
+main>.member-collection>.container>.content .list .whole-discover>.page .content{
+  font-size: 16px;
+  color: #666666;
+  line-height: 28px;
+  margin-top: 11px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+main>.member-collection>.container>.content .list .whole-discover>.page .img{
+  margin-top: 10px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #F2F2F2;
+}
+main>.member-collection>.container>.content .list .whole-discover>.page .img img{
+  background: #D8D8D8;
+  border-radius: 3px;
+}
+main>.member-collection>.container>.content .list .whole-discover>.page .img2 li{
+  width: 32%;
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 8px;
+}
+main>.member-collection>.container>.content .list .whole-discover>.page .img2 li:nth-child(3n) {
+  margin-right: 0;
+}
+/*  评价  */
+main>.member-collection>.container>.content .list .whole-discover>.page .comment{
+  margin-top: 15px;
+}
+main>.member-collection>.container>.content .list .whole-discover>.page .comment a{
+  width: 50%;
+  float: left;
+  display: block;
+  text-align: center;
+}
+main>.member-collection>.container>.content .list .whole-discover>.page .comment a .ico{
+  width: 18px;
+  height: 18px;
+  margin-left: 3.2rem;
+}
+main>.member-collection>.container>.content .list .whole-discover>.page .comment .fabulous .ico{
+  background-image: url("../images/article-details-fabulous.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main>.member-collection>.container>.content .list .whole-discover>.page .comment .fabulous .ico2{
+  background-image: url("../images/article-details-fabulous2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main>.member-collection>.container>.content .list .whole-discover>.page .comment a .text{
+  font-size: 12px;
+  color: #666666;
+  line-height: 18px;
+  margin-left: 10px;
+}
+
+/*腕表*/
+main>.member-collection>.container>.content .list .whole-surface{
+  padding: 10px 0 10px 30px;
+  display: block;
+  border-bottom: 1px solid #EEEEEE;
+}
+main>.member-collection>.container>.content .list .whole-surface:last-child{
+  border-bottom: 0;
+}
+main>.member-collection>.container>.content .list .whole-surface .img{
+  max-width: 90px;
+  margin-right: 20px;
+}
+main>.member-collection>.container>.content .list .whole-surface .img img{
+  height: 90px;
+  width: auto;
+}
+main>.member-collection>.container>.content .list .whole-surface .title{
+  max-width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+main>.member-collection>.container>.content .list .whole-surface .title .p1{
+   font-size: 14px;
+   color: #666666;
+  margin-top: 15px;
+}
+main>.member-collection>.container>.content .list .whole-surface .title .p2{
+  font-size: 16px;
+  color: #D1AF67;
+  margin-top: 5px;
+}
+
+/*全部*/
+main>.member-collection>.container>.content .whole .page{
+  display: table;
+}
+
+/*删除按钮*/
+main>.member-collection>.container>.content .list .button{
+  background: #CCCCCC;
+  border-radius: 3px;
+  width: 100%;
+  height: 45px;
+  max-width: 640px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  font-size: 14px;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 45px;
+}
+main>.member-collection>.container>.content .list .button-on{
+  background: #D1AF67;
+}
