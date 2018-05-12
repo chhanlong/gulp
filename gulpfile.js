@@ -9,6 +9,11 @@ var rev = require('gulp-rev');
 var revCollector = require('gulp-rev-collector');
 //压缩html
 var htmlmin = require('gulp-htmlmin');
+// 本实例为完成精灵图的合并
+const spritesmith = require("gulp.spritesmith");
+//获取gulp-less模块
+var less = require("gulp-less");
+
 //定义静态文件路径
 var staticsUrl = "./";
 //定义文件路径
@@ -68,12 +73,57 @@ gulp.task('html', function () {
     .pipe(gulp.dest(Url+'index/'));
 });
 
+/**
+ * 压缩精灵图
+ */
+gulp.task('sprite',function(){
+  gulp.src("./images/ico-a/*.png")
+    .pipe(spritesmith({
+        imgName:'images/sprite.png', //合并后大图的名称
+        cssName:'less/sprite.less',
+        padding:2,// 每个图片之间的间距，默认为0px
+        cssTemplate:(data)=>{
+          // data为对象，保存合成前小图和合成打大图的信息包括小图在大图之中的信息
+          let arr = [],
+          width = data.spritesheet.px.width,
+          height = data.spritesheet.px.height,
+          url =  data.spritesheet.image
+          data.sprites.forEach(function(sprite) {
+            arr.push(
+              "."+sprite.name+
+              "{"+
+              "background: url('"+url+"') "+
+              "no-repeat "+
+              sprite.px.offset_x+" "+sprite.px.offset_y+";"+
+              "background-size: "+ width+" "+height+";"+
+              "width: "+sprite.px.width+";"+
+              "height: "+sprite.px.height+";"+
+              "}\n"
+            )
+          })
+          // return "@fs:108rem;\n"+arr.join("")
+          return arr.join("")
+        }
+    }))
+    .pipe(gulp.dest("./sprite/"))
+})
+
+//编译less
+gulp.task('less',function(){
+  //1.找到less文件
+  gulp.src('./sprite/less/**.less')
+    //2.编译为css
+    .pipe(less())
+    //3.另存为css
+    .pipe(gulp.dest('./sprite/css/'))
+})
 
 // 监听文件修改，当文件被修改则执行 script 任务
 gulp.task('auto', function () {
   gulp.watch(staticsUrl+'js/*.js', ['script']);
   gulp.watch(staticsUrl+'css/*.css', ['style']);
   gulp.watch(Url+'index/*.html', ['html']);
+  //gulp.watch('./sprite/less/**.less',['less']);
 });
 
 /**
@@ -96,9 +146,6 @@ gulp.task('prod', function (done) {
 gulp.task('local', function (done) {
   condition = false;
   runSequence(
-    ['script'],
-    ['style'],
-    ['html'],
     ['auto'],
     done);
 });

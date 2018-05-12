@@ -120,8 +120,7 @@ main>.footer a{
   float: left;
 }
 main>.footer a .img{
-  width: 25px;
-  margin: 6px auto 2px auto;
+  margin: 5px auto 2px auto;
 }
 main>.footer a .text{
   text-align: center;
