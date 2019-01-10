@@ -4,11 +4,14 @@ var cleanCSS = require('gulp-clean-css');
 var runSequence = require('run-sequence');
 //更改压缩名称
 var rename = require("gulp-rename");
+
 //对文件名加MD5后缀 - 路径替换
 var rev = require('gulp-rev');
 var revCollector = require('gulp-rev-collector');
+
 //压缩html
 var htmlmin = require('gulp-htmlmin');
+
 // 本实例为完成精灵图的合并
 const spritesmith = require("gulp.spritesmith");
 //获取gulp-less模块
