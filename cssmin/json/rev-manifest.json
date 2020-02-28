@@ -1,9 +1,9 @@
 {
-  "common.min.css": "common.min.css?v=b868e2df35",
-  "discovery.min.css": "discovery.min.css?v=7ba797140f",
-  "goods.min.css": "goods.min.css?v=39bf8f39b1",
-  "index.min.css": "index.min.css?v=da38a818a9",
-  "list.min.css": "list.min.css?v=2a9d045f0a",
-  "member.min.css": "member.min.css?v=c8f7b03f38",
-  "search.min.css": "search.min.css?v=72c1b4db62"
+  "common.min.css": "common-53c04103fa.min.css",
+  "discovery.min.css": "discovery-7ba797140f.min.css",
+  "goods.min.css": "goods-39bf8f39b1.min.css",
+  "index.min.css": "index-da38a818a9.min.css",
+  "list.min.css": "list-2a9d045f0a.min.css",
+  "member.min.css": "member-c8f7b03f38.min.css",
+  "search.min.css": "search-72c1b4db62.min.css"
 }

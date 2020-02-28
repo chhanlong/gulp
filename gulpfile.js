@@ -34,10 +34,10 @@ gulp.task('script', function() {
 });
 
 gulp.task('script-json', function() {
-  gulp.src([staticsUrl+'jsmin/json/*.json', Url+'common/*.php'])
+  gulp.src([staticsUrl+'jsmin/json/*.json', Url+'*/*.html'])
     //.pipe(rename({suffix: '.min'}))
     .pipe(revCollector())
-    .pipe(gulp.dest(Url+'common/'));
+    .pipe(gulp.dest(Url+'*/'));
 });
 
 gulp.task('style', function() {
@@ -52,10 +52,10 @@ gulp.task('style', function() {
 });
 
 gulp.task('style-json', function() {
-  gulp.src([staticsUrl+'cssmin/json/*.json', Url+'common/*.php'])
+  gulp.src([staticsUrl+'cssmin/json/*.json', Url+'*/*.html'])
     //.pipe(rename({suffix: '.min'}))
     .pipe(revCollector())
-    .pipe(gulp.dest(Url+'common/'));
+    .pipe(gulp.dest(Url+'*/'));
 });
 
 //压缩html
