@@ -34,10 +34,10 @@ gulp.task('script', function() {
 });
 
 gulp.task('script-json', function() {
-  gulp.src([staticsUrl+'jsmin/json/*.json', Url+'*/*.html'])
-    //.pipe(rename({suffix: '.min'}))
+  gulp.src([staticsUrl+'jsmin/json/*.json', Url+'index/*.html'])
+    // .pipe(rename({suffix: '.min'}))
     .pipe(revCollector())
-    .pipe(gulp.dest(Url+'*/'));
+    .pipe(gulp.dest(Url+'index/'));
 });
 
 gulp.task('style', function() {
@@ -52,10 +52,10 @@ gulp.task('style', function() {
 });
 
 gulp.task('style-json', function() {
-  gulp.src([staticsUrl+'cssmin/json/*.json', Url+'*/*.html'])
-    //.pipe(rename({suffix: '.min'}))
+  gulp.src([staticsUrl+'cssmin/json/*.json', Url+'index/*.html'])
+    // .pipe(rename({suffix: '.min'}))
     .pipe(revCollector())
-    .pipe(gulp.dest(Url+'*/'));
+    .pipe(gulp.dest(Url+'index/'));
 });
 
 //压缩html
@@ -143,6 +143,8 @@ gulp.task('prod', function (done) {
     ['script-json'],
     ['style'],
     ['style-json'],
+    ['sprite'],
+    ['less'],
     done);
 });
 

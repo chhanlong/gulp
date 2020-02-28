@@ -1,24 +1,12 @@
 .icon-index-choice2 {
   background: url('../images/sprite.png') no-repeat 0px 0px;
-  background-size: 52px 52px;
+  background-size: 52px 25px;
   width: 25px;
   height: 25px;
 }
 .icon-index-discovery2 {
   background: url('../images/sprite.png') no-repeat -27px 0px;
-  background-size: 52px 52px;
-  width: 25px;
-  height: 25px;
-}
-.icon-index-home2 {
-  background: url('../images/sprite.png') no-repeat 0px -27px;
-  background-size: 52px 52px;
-  width: 25px;
-  height: 25px;
-}
-.icon-index-member2 {
-  background: url('../images/sprite.png') no-repeat -27px -27px;
-  background-size: 52px 52px;
+  background-size: 52px 25px;
   width: 25px;
   height: 25px;
 }
