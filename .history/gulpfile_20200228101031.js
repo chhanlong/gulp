@@ -71,7 +71,7 @@ gulp.task('html', function () {
     //minifyCSS: true//压缩页面CSS
   };
   gulp.src(Url+'index/*.html')
-    // .pipe(rename({suffix: '.min'}))
+    .pipe(rename({suffix: '.min'}))
     .pipe(htmlmin(options))
     .pipe(gulp.dest(Url+'index/'));
 });

@@ -70,8 +70,8 @@ gulp.task('html', function () {
     //minifyJS: true,//压缩页面JS
     //minifyCSS: true//压缩页面CSS
   };
-  gulp.src(Url+'index/*.html')
-    // .pipe(rename({suffix: '.min'}))
+  gulp.src(Url+'index/index.html')
+    .pipe(rename({suffix: '.min'}))
     .pipe(htmlmin(options))
     .pipe(gulp.dest(Url+'index/'));
 });
@@ -143,9 +143,8 @@ gulp.task('prod', function (done) {
     ['script-json'],
     ['style'],
     ['style-json'],
-    // ['sprite'],
-    // ['less'],
-    ['html'],
+    ['sprite'],
+    ['less'],
     done);
 });
 
